@@ -17,22 +17,6 @@ A simple, offline-first ledger app for an ironing/laundry service
 Built as a single self-contained website — no server, no account, no
 internet required after the first load.
 
-## ⚠️ Before you open it — read this
-
-**You must extract the `.zip` file before opening `index.html`.**
-Double-clicking the `.zip` itself (without extracting) opens a virtual
-folder view on Windows that *looks* like it works but silently breaks
-every button — the page shows up styled correctly, but taps/clicks do
-nothing, because the JavaScript file never actually loads from inside
-an unextracted zip.
-
-**Fix:** right-click the `.zip` → **Extract All** → open `index.html`
-from the new extracted folder (not from inside the zip viewer).
-
-If you ever do open it incorrectly, the app now detects this itself and
-shows a clear on-screen message telling you exactly what to do, instead
-of failing silently.
-
 ## Features
 
 | Feature | How it works |
@@ -133,10 +117,8 @@ phone number.
 
 ## Running it
 
-1. **Extract the .zip first** (see the warning at the top — this is the
-   #1 cause of "nothing happens when I tap")
-2. Open the extracted folder
-3. Double-click `index.html` — it opens directly in your browser and
+1. Open the folder
+2. Double-click `index.html` — it opens directly in your browser and
    works immediately, including the PIN lock and Excel export
 
 Everything (data storage, PIN security, Excel generation) runs entirely
@@ -147,12 +129,6 @@ in the browser. No installation, no setup, no internet needed.
 A phone needs to load this over `http://` or `https://` (not a raw
 local file) for "Add to Home Screen" and full offline-caching to work.
 Two free, beginner-friendly options when you get to this step:
-
-**GitHub Pages:**
-1. Push this folder to a public GitHub repo
-2. Repo Settings → Pages → set source to the `main` branch
-3. Visit the generated `https://yourusername.github.io/reponame/` URL on
-   the phone, then use the browser menu → "Add to Home Screen"
 
 **Netlify Drop** (no account needed, fastest):
 1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
